@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:kings_lab_assignment/features/login/models/login_model.dart';
 import 'package:kings_lab_assignment/features/login/models/login_responsive_model.dart';
-import 'package:kings_lab_assignment/utils/consts/secrets.dart';
+
 import 'package:kings_lab_assignment/utils/helpers/failure.dart';
 
 final loginServiceProvider = Provider((ref) => LoginService());

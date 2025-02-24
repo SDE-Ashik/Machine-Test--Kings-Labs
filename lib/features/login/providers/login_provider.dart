@@ -6,6 +6,7 @@ import 'package:kings_lab_assignment/config/router.dart';
 import 'package:kings_lab_assignment/features/login/models/login_model.dart';
 import 'package:kings_lab_assignment/features/login/services/login_service.dart';
 import 'package:kings_lab_assignment/utils/snackbars/error_snackbars.dart';
+import 'package:kings_lab_assignment/utils/snackbars/success_snackbars.dart';
 
 final loginProvider = NotifierProvider<LoginProvider, bool>(
   () => LoginProvider(),
@@ -36,10 +37,12 @@ class LoginProvider extends Notifier<bool> {
         if (loginData.password == "emilysspass" &&
             loginData.username == "emilys") {
           if (context.mounted) {
+            showSuccessSnackbar(message: "Login successful", context: context);
             context.go(AppRouter.home); // Navigate to main app route
           }
         } else {
-          showErrorSnackbar(message: failure.message, context: context);
+          showErrorSnackbar(
+              message: "Incorrect username or password", context: context);
         }
       },
       (success) {
