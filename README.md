@@ -54,7 +54,7 @@
     </ul>
 
 <h2>Download APK</h2>
-    <p><a href="your_apk_download_link_here">Download APK</a></p>
+    <p><a href="https://drive.google.com/file/d/1lrqeNDZDx4GJ78NEi39GRDcNo_qXIT5D/view?usp=sharing">Download APK</a></p>
 
   <h2>Setup Instructions</h2>
     <pre><code>git clone https://github.com/SDE-Ashik/Machine-Test--Kings-Labs.git
